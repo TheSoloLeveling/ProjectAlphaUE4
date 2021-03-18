@@ -8,6 +8,8 @@
 #include "Camera/CameraComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
+#include "Components/SkeletalMeshComponent.h"
+
 
 
 // Sets default values
@@ -35,6 +37,11 @@ void AMainCharacter::BeginPlay()
 
 	
 	APlayerController* PlayerController = Cast<APlayerController>(Controller);
+	//CharacterGun = GetWorld()->SpawnActor<ACharacterGun>(GunClass);
+
+	//GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
+
+	
 	
 	
 }
